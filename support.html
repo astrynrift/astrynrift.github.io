@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for Astryn Rift: Space Defense: restore purchases, saved progress, and how to report a bug.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="dark">
+  <title>Support — Astryn Rift: Space Defense</title>
+  <!-- Store pages for Astryn Rift: Space Defense. Not hosted or submitted yet. -->
+  <style>
+
+:root {
+  --bg: #040507;
+  --ink: #0b0d11;
+  --panel: #0c0e13;
+  --line: rgba(233,238,245,0.12);
+  --line2: rgba(233,238,245,0.22);
+  --tx: #e9eef5;
+  --grey: #8d97a6;
+  --dim: #4a525e;
+  --link: #a7bfd0;
+  --link-h: #d5e4ee;
+  --warn: #c4a06a;
+  --font: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: "SF Mono", Consolas, Menlo, monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--bg); color: var(--tx); -webkit-text-size-adjust: 100%; }
+body {
+  font: 16px/1.6 var(--font);
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(28,36,52,0.55), transparent 55%),
+    radial-gradient(circle at 12% 18%, rgba(233,238,245,0.04) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 78% 12%, rgba(233,238,245,0.035) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 22% 72%, rgba(233,238,245,0.03) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 88% 64%, rgba(233,238,245,0.04) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 48% 40%, rgba(233,238,245,0.025) 0 1px, transparent 1.6px),
+    var(--bg);
+  color: var(--tx);
+}
+a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover, a:focus-visible { color: var(--link-h); }
+a:focus-visible { outline: 2px solid var(--line2); outline-offset: 3px; }
+.wrap { width: min(720px, calc(100% - 40px)); margin: 0 auto; padding: 28px 0 64px; }
+header.site { border-bottom: 1px solid var(--line); padding-bottom: 22px; margin-bottom: 36px; }
+.brand { display: block; text-decoration: none; color: inherit; }
+.brand:hover { color: inherit; }
+.eyebrow { font: 500 10px/1 var(--font); letter-spacing: 0.28em; text-transform: uppercase; color: var(--grey); margin-bottom: 8px; }
+.brand h1 { font: 500 22px/1.2 var(--font); letter-spacing: 0.12em; text-transform: uppercase; }
+.brand .sub { margin-top: 4px; font-size: 13px; color: var(--grey); letter-spacing: 0.04em; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 4px; margin-top: 18px; }
+nav a {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 0 14px;
+  color: var(--grey); text-decoration: none;
+  font: 500 11px/1 var(--font); letter-spacing: 0.16em; text-transform: uppercase;
+  border: 1px solid transparent;
+}
+nav a:hover, nav a:focus-visible { color: var(--tx); border-color: var(--line2); }
+nav a[aria-current="page"] { color: var(--tx); border-color: var(--line2); background: rgba(233,238,245,0.03); }
+h2 { font: 500 20px/1.3 var(--font); letter-spacing: 0.02em; margin: 2.1em 0 0.6em; }
+h3 { font: 500 16px/1.35 var(--font); margin: 1.5em 0 0.45em; color: #d5dbe4; }
+p, li { color: #c5ccd6; }
+p + p, ul + p, ol + p, .ph + p, p + .ph, p + ul, p + ol { margin-top: 0.9em; }
+ul, ol { margin: 0.7em 0 0 1.2em; }
+li + li { margin-top: 0.4em; }
+.lead { font-size: 17px; color: var(--tx); margin-bottom: 1.2em; }
+.meta { font-size: 13px; color: var(--grey); margin: 0 0 1.6em; }
+.meta span { display: inline-block; margin-right: 1.25em; margin-top: 0.25em; }
+table { width: 100%; border-collapse: collapse; margin: 1em 0 1.4em; font-size: 14.5px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { font: 500 10px/1.3 var(--font); letter-spacing: 0.16em; text-transform: uppercase; color: var(--grey); }
+td { color: #c5ccd6; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 18px 18px 16px;
+  margin: 1.1em 0;
+}
+.card h3 { margin-top: 0; }
+.ph {
+  display: block;
+  margin: 0.7em 0 1em;
+  padding: 10px 12px;
+  border: 1px dashed var(--warn);
+  background: rgba(196,160,106,0.06);
+  color: var(--tx);
+  font-family: var(--mono);
+  font-size: 14px;
+  word-break: break-all;
+}
+.ph i { display: block; margin-top: 4px; font-style: normal; font-family: var(--font); font-size: 12px; color: var(--warn); letter-spacing: 0.02em; word-break: normal; }
+.note { font-size: 14px; color: var(--grey); }
+footer.site { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 13px; color: var(--dim); }
+footer.site p + p { margin-top: 0.45em; }
+.mono { font-family: var(--mono); font-size: 0.92em; color: var(--grey); }
+a[href^="mailto:"] { font-family: var(--mono); font-size: 0.95em; word-break: break-all; }
+.links { display: grid; gap: 12px; margin: 1.4em 0 0; }
+.links a {
+  display: flex; flex-direction: column; justify-content: center;
+  min-height: 72px; padding: 16px 18px;
+  border: 1px solid var(--line); background: var(--panel);
+  text-decoration: none; color: var(--tx);
+}
+.links a:hover, .links a:focus-visible { border-color: var(--line2); color: var(--tx); }
+.links a strong { font: 500 11px/1 var(--font); letter-spacing: 0.18em; text-transform: uppercase; }
+.links a span { margin-top: 6px; font-size: 14px; color: var(--grey); font-weight: 400; }
+@media (max-width: 560px) {
+  .wrap { width: calc(100% - 32px); padding-top: 22px; }
+  .brand h1 { font-size: 19px; letter-spacing: 0.08em; }
+  table, thead, tbody, th, td, tr { display: block; width: 100%; }
+  thead { display: none; }
+  tr { border: 1px solid var(--line); margin: 0 0 12px; background: var(--panel); }
+  th, td { border: 0; padding: 6px 14px; }
+  td { padding-bottom: 12px; }
+  td:first-child { padding-top: 12px; }
+  td::before {
+    content: attr(data-label);
+    display: block;
+    font: 500 10px/1.3 var(--font);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--grey);
+    margin-bottom: 4px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="index.html">
+        <div class="eyebrow">Official pages</div>
+        <h1>Astryn Rift</h1>
+        <div class="sub">Space Defense</div>
+      </a>
+      <nav aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html" aria-current="page">Support</a>
+      </nav>
+    </header>
+    <main>
+      <p class="eyebrow">Help</p>
+      <h2 style="margin-top:0">Support</h2>
+      <p class="meta"><span>Astryn Rift: Space Defense</span><span>Updated November 23, 2026</span></p>
+      <p class="lead">If something goes wrong, start here. You can also write to us at the address below.</p>
+
+      <h2>Contact</h2>
+      <p>Email:</p>
+      <p><a href="mailto:astrynrift.support@gmail.com">astrynrift.support@gmail.com</a></p>
+      <p class="note">Please include your device type (iPhone, iPad, or Android), the app version if you know it, and a short description of what happened. Do not send payment card numbers. For billing disputes, you can also use Apple or Google’s purchase support, since they process the payment.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>How do I restore purchases?</h3>
+      <p>Open Settings in the game and tap Restore next to Purchases. The store will check the Apple ID or Google account signed in on that device and apply any purchases again that can be restored.</p>
+      <p>The only real-money items are the four Lumarite packs (Shard Pack, Sealed Case, Supply Crate, and Reserve Vault). These are consumable. A pack you already received and spent is not granted again. If you were charged and the Lumarite never appeared, try Restore once, then contact us with the approximate time of the purchase and the pack name. Apple or Google handle refunds.</p>
+
+      <h3>Where is my progress saved?</h3>
+      <p>Progress is saved on your device, including your callsign, unlocks, and Lumarite balance. On iPhone and iPad it also syncs automatically through iCloud, using the Apple ID already signed into the device — there is no sign-in screen in the game. On Android it syncs through Google Play Games saves, using the Google account on the device.</p>
+      <p>Your game will follow you to other devices signed into the same Apple ID with iCloud turned on, or the same Google account on Android. If iCloud (or Google Play Games) is off, progress stays on that device only. We do not operate our own account or cloud-save service, and we cannot read the copy in your iCloud or Google storage.</p>
+      <p>If sync is on, deleting the app does not erase that copy, so your progress can come back when you reinstall and are signed into the same Apple ID or Google account. If iCloud or Google Play Games is off, deleting the app or clearing its data erases the save on that device. Settings → Reset all progress erases the save, including the synced copy, so it will not come back on your other devices.</p>
+
+      <h3>How do I report a bug?</h3>
+      <p>In the game, open Settings and choose Report a bug. You can copy the device details shown there (app version, device/OS information, and screen size) and email them to the support address above, with a short description of what went wrong and what you expected to happen. Screenshots help when the problem is visual.</p>
+      <p>In the current build, Report a bug is not connected to an automatic form. Copying the details and emailing the support address is the way to reach us.</p>
+
+      <h3>I want to turn off purchases or reset the game</h3>
+      <p>Purchases can be restricted with Screen Time or parental controls on the device. To wipe the game and start over, use Settings → Reset all progress. That erases the save, including the copy that syncs through iCloud or Google Play Games, and does not automatically refund purchases. Deleting the app alone does not erase a synced save.</p>
+
+      <h3>Do you have ads, accounts, or chat?</h3>
+      <p>No. The game has no ads, no tracking, no player accounts, and no chat. Optional cosmetics in the shop are bought with Lumarite.</p>
+    </main>
+    <footer class="site">
+      <p>Astryn Rift: Space Defense is developed by Chase Richardson, an individual developer. Bundle ID <span class="mono">com.astrynrift</span>.</p>
+      <p>Contact: <a href="mailto:astrynrift.support@gmail.com">astrynrift.support@gmail.com</a></p>
+      <p>&copy; 2026 Chase Richardson.</p>
+    </footer>
+  </div>
+</body>
+</html>
