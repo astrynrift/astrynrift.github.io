@@ -146,7 +146,7 @@ a[href^="mailto:"] { font-family: var(--mono); font-size: 0.95em; word-break: br
     <main>
       <p class="eyebrow">Legal</p>
       <h2 style="margin-top:0">Privacy Policy</h2>
-      <p class="meta"><span>Effective date: November 23, 2026</span><span>Developer: Chase Richardson</span><span>App: Astryn Rift: Space Defense</span></p>
+      <p class="meta"><span>Effective date: November 26, 2026</span><span>Developer: Chase Richardson</span><span>App: Astryn Rift: Space Defense</span></p>
 
       <p class="lead">This policy describes what Astryn Rift: Space Defense (“the game,” “we,” or “us”) stores and where it is kept. It is written to match how the shipped app works at launch.</p>
 
@@ -155,7 +155,7 @@ a[href^="mailto:"] { font-family: var(--mono); font-size: 0.95em; word-break: br
         <li>The game does not use analytics, advertising, tracking, or third-party advertising SDKs. There are no ads.</li>
         <li>You do not create an account. There is no chat and no online profile service.</li>
         <li>Your progress, settings, and callsign are saved on your device, and in your own iCloud or Google Play Games storage when that sync is on. We cannot access or read that storage, and we do not collect it.</li>
-        <li>If you buy Lumarite, payment is handled by Apple or Google. We never see or store your card details.</li>
+        <li>If you buy Lumarite, payment is handled by Apple or Google. We never see or store your card details. Lumarite is spent on cosmetics and a permanent 1.5× Speed Boost unlock; weapons and upgrades are earned in play with alloy.</li>
       </ul>
 
       <h2>Who we are</h2>
@@ -171,7 +171,7 @@ a[href^="mailto:"] { font-family: var(--mono); font-size: 0.95em; word-break: br
         </thead>
         <tbody>
           <tr>
-            <td data-label="Data">Game progress, settings, owned cosmetics, Lumarite balance, and related play history</td>
+            <td data-label="Data">Game progress, settings, owned cosmetics, 1.5× Speed Boost unlock, Lumarite balance, and related play history</td>
             <td data-label="Where">On your device, and in your own iCloud or Google Play Games storage when sync is on</td>
             <td data-label="Why">To keep your game between sessions and across your other devices signed into the same Apple ID or Google account</td>
           </tr>
@@ -201,15 +201,16 @@ a[href^="mailto:"] { font-family: var(--mono); font-size: 0.95em; word-break: br
         <li>Supply Crate — $19.99 — 2,200 Lumarite</li>
         <li>Reserve Vault — $29.99 — 3,600 Lumarite</li>
       </ul>
-      <p>Skins and bundles in the shop are bought with Lumarite, not with a separate real-money product. Lumarite spends in the shop are for looks only; they do not change combat stats. Payment, billing, taxes, and refunds are handled by the App Store or Google Play under Apple’s or Google’s terms. We never receive your payment card number, bank details, or full store account credentials.</p>
+      <p>Lumarite is spent in the game on cosmetics (skins, trails, paints, decals, Mantles, and similar looks) and on a permanent 1.5× Speed Boost unlock, which costs 300 Lumarite. Speed Boost does not change weapon power or other combat stats; it lets you run matches at 1.5× speed. Weapons and upgrades are earned in play with alloy. Lumarite is not required to play or to finish the campaign. Skins and bundles are bought with Lumarite, not with a separate real-money product.</p>
+      <p>Payment, billing, taxes, and refunds are handled by the App Store or Google Play under Apple’s or Google’s terms. We never receive your payment card number, bank details, or full store account credentials.</p>
       <div class="card">
-        <h3>Receipt verification (when it is connected)</h3>
-        <p>In the current game build, checkout and receipt verification are disconnected. Nothing is charged through the game, and the game does not send purchase data to a server of ours.</p>
-        <p>If and when receipt verification is wired up, the flow will be: you pay Apple or Google, the store returns a receipt, and the game may send a request to our server so we can confirm the purchase is genuine and grant the Lumarite you paid for. That request would include the store platform, the product ID, the receipt, the transaction ID, and the anonymous local player ID described above — not your name, email, or card data. We would use this only to fulfill and restore the purchase and to prevent the same transaction from being granted twice, and only for as long as needed for those purposes. We would not use it for advertising or tracking, and we would not link it to a real-world identity. This section will be updated if that service goes live.</p>
+        <h3>How purchases are confirmed</h3>
+        <p>On iPhone and iPad, purchases are confirmed on the device with Apple’s StoreKit 2. The game does not send receipts, transaction IDs, or the local player ID to a server of ours. A record of product and transaction IDs already applied stays on your device, and in your iCloud save when sync is on, so the same pack is not granted twice.</p>
+        <p>If we later add a receipt-verification server, we will update this policy and the App Store privacy label before that change ships. That request would include the store platform, the product ID, the receipt, the transaction ID, and the anonymous local player ID described above — not your name, email, or card data — and would be used only to fulfill the purchase and to prevent the same transaction from being granted twice.</p>
       </div>
 
       <h2>Bug reports</h2>
-      <p>If you choose Settings → Report a bug, or you email us, you may send a description of the problem. The in-game report can include the app version, a general device/OS string, screen size, and the time of the report. In the current build this button is not connected to a remote form; you can copy the details and send them yourself. Those details are sent only if you choose to send them.</p>
+      <p>If you choose Settings → Report a bug, the game opens an email draft to our support address. The draft can include the app version, a general device/OS string, screen size, and the time of the report, along with anything you type. Nothing is sent unless you send the email. You can also write to us directly without using that button.</p>
 
       <h2>Children</h2>
       <p>The game is a general-audience tower-defense game. It is not directed at children under 13, and we do not knowingly collect personal information from children. The game does not ask for a name, email, or other contact details as a condition of play (your optional callsign is stored with your save). Purchases on a child’s device are controlled by Apple or Google parental controls, such as Ask to Buy.</p>
@@ -219,11 +220,11 @@ a[href^="mailto:"] { font-family: var(--mono); font-size: 0.95em; word-break: br
         <li>Start over: Settings → Reset all progress. This erases the save, including the copy that syncs through iCloud or Google Play Games.</li>
         <li>Uninstalling the app does not erase a synced copy. If iCloud or Google Play Games is off, uninstalling or clearing the app’s data erases the save on that device.</li>
         <li>Restore store purchases that belong to your Apple or Google account: Settings → Purchases → Restore. See the <a href="support.html">Support</a> page for what restore can and cannot do.</li>
-        <li>Questions, or a request about any purchase record that may later be held on a verification server, can be sent to the support address in Contact below.</li>
+        <li>Questions about privacy or a purchase can be sent to the support address in Contact below.</li>
       </ul>
 
       <h2>Changes</h2>
-      <p>If this policy changes, we will update the effective date above. If receipt verification or any other collection is turned on, we will describe it here before or when that change takes effect.</p>
+      <p>If this policy changes, we will update the effective date above. If a receipt-verification server or any other collection is added, we will describe it here before that change ships.</p>
 
       <h2>Contact</h2>
       <p>Chase Richardson<br>Astryn Rift: Space Defense</p>
